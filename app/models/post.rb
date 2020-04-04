@@ -15,6 +15,8 @@ class Post < ActiveRecord::Base
       if clickbait.none? do |pattern|
           pattern.match title 
         end 
+      
+      erros.add(:title, "")
     end 
   end 
 end
