@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
           pattern.match title 
         end 
       
-      erros.add(:title, "")
+      erros.add(:title, "must be clickbait")
     end 
   end 
 end
