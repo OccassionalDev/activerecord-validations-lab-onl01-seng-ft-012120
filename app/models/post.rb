@@ -6,7 +6,12 @@ class Post < ActiveRecord::Base
   
   def is_clickbait?
     clickbait = [
-        
+      /Won't Believe/i,
+      /Secret/i,
+      /Top [0-9]*/i,
+      /Guess/i
       ]
+      
+      if 
   end 
 end
