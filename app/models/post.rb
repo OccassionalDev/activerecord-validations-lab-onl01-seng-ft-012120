@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
   
   def is_clickbait?
     clickbait = [
-      
+        
       ]
   end 
 end
