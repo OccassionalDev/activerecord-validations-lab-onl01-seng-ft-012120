@@ -12,9 +12,7 @@ class Post < ActiveRecord::Base
       /Guess/i
       ]
       
-      if clickbait.none? do |pattern|
-          pattern.match title 
-        end 
+      if clickbait.none? { |pattern| pattern.match } 
       
       erros.add(:title, "must be clickbait")
     end 
