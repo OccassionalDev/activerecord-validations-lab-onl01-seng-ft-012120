@@ -12,6 +12,7 @@ class Post < ActiveRecord::Base
       /Guess/i
       ]
       
-      if 
+      if clickbait.none? do |pattern|
+        
   end 
 end
