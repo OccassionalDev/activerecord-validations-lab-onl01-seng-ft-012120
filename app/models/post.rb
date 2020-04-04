@@ -13,8 +13,8 @@ class Post < ActiveRecord::Base
       ]
       
       if clickbait.none? do |pattern|
-        pattern.match title 
-      end 
+          pattern.match title 
+        end 
     end 
   end 
 end
